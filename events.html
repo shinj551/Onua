@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Events · onua</title>
+<meta name="description" content="Conversation evenings, open studios and workshops ONUA is preparing. Unconfirmed dates and registration are clearly marked.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap">
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" href="assets/logo/onua-wordmark.svg" type="image/svg+xml">
+<script>document.documentElement.classList.add('js')</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><filter id="hand-ink" x="-2%" y="-10%" width="104%" height="120%"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="4" result="g"/><feDisplacementMap in="SourceGraphic" in2="g" scale="1.1" xChannelSelector="R" yChannelSelector="G"/></filter></svg>
+
+<header class="site-header wrap">
+  <a class="brand" href="index.html"><img src="assets/logo/onua-wordmark.svg" alt="onua, home" width="380" height="170"></a>
+  <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-menu">Menu</button>
+  <nav aria-label="Main">
+    <ul class="nav-list" id="site-menu">
+      <li><a href="about.html">About</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="events.html" aria-current="page">Events</a></li>
+      <li><a href="notes.html">Notes</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="main" tabindex="-1">
+  <section class="wrap grid page-intro" aria-labelledby="page-title">
+    <p class="meta num">04 / 06 — Events</p>
+    <div class="intro-text">
+      <h1 id="page-title">Rooms where stories are <span class="under">shared</span></h1>
+      <p class="lead muted">We are preparing conversation evenings, open studios and workshops.</p>
+      <p class="muted">Every event below is still being planned. No dates or places are confirmed, and registration is not open yet. Let us know you’re interested and we’ll tell you first once details are set.</p>
+    </div>
+  </section>
+
+  <section class="wrap" aria-labelledby="list-title">
+    <h2 class="visually-hidden" id="list-title">Event list</h2>
+    <div class="toolbar">
+      <ul class="filters" data-filter-group="event-list" data-status="event-status" data-empty="event-empty" aria-label="Filter by status">
+        <li><button class="filter" type="button" data-filter="all" aria-pressed="true">All<span class="count num">4</span></button></li>
+        <li><button class="filter" type="button" data-filter="upcoming" aria-pressed="false">Upcoming<span class="count num">4</span></button></li>
+        <li><button class="filter" type="button" data-filter="live" aria-pressed="false">Ongoing<span class="count num">0</span></button></li>
+        <li><button class="filter" type="button" data-filter="done" aria-pressed="false">Past<span class="count num">0</span></button></li>
+      </ul>
+      <p class="legend"><span class="status status--upcoming">Upcoming</span><span class="status status--live">Ongoing</span><span class="status status--done">Past</span></p>
+    </div>
+    <p class="visually-hidden" id="event-status" role="status" aria-live="polite"></p>
+
+    <ul class="events" id="event-list">
+      <li class="grid event" id="ev-talk" data-tags="upcoming">
+        <div class="event-meta"><span class="status status--upcoming">Upcoming</span><span class="meta">Conversation</span></div>
+        <div class="event-body">
+          <h2>Unseen Stories</h2>
+          <p>An evening with people who have kept small practices going for years: potters, cooks, musicians, neighbourhood organisers. They talk about the work that rarely gets a stage.</p>
+          <details class="more">
+            <summary>More details</summary>
+            <div class="more-body">
+              <ul><li>For: anyone curious about small creative practices and shops</li><li>Format: a few short talks, then open conversation</li><li>Cost: we plan to keep it free</li></ul>
+            </div>
+          </details>
+        </div>
+        <div class="event-side">
+          <dl class="dl"><dt>Date</dt><dd><span class="tbd">To be confirmed</span></dd><dt>Place</dt><dd><span class="tbd">To be confirmed</span></dd></dl>
+          <div class="apply"><strong>Registration not open</strong><span class="meta">We are not taking sign-ups yet.</span><a class="arrow link" href="contact.html#collab">Register interest</a></div>
+        </div>
+      </li>
+
+      <li class="grid event" id="ev-studio" data-tags="upcoming">
+        <div class="event-meta"><span class="status status--upcoming">Upcoming</span><span class="meta">Open studio</span></div>
+        <div class="event-body">
+          <h2>Open Studio</h2>
+          <p>A day when the making is laid out as it is: discarded sketches, folded wrapper tests, notebook pages. We talk through how a brand actually comes together.</p>
+          <details class="more">
+            <summary>More details</summary>
+            <div class="more-body">
+              <ul><li>For: designers, students and anyone who makes things</li><li>Format: drop-in viewing with short talks</li><li>We are looking for a partner to host the space</li></ul>
+            </div>
+          </details>
+        </div>
+        <div class="event-side">
+          <dl class="dl"><dt>Date</dt><dd><span class="tbd">To be confirmed</span></dd><dt>Place</dt><dd><span class="tbd">To be confirmed</span></dd></dl>
+          <div class="apply"><strong>Registration not open</strong><span class="meta">We are looking for a venue partner.</span><a class="arrow link" href="contact.html#partner">Offer a space</a></div>
+        </div>
+      </li>
+
+      <li class="grid event" id="ev-workshop" data-tags="upcoming">
+        <div class="event-meta"><span class="status status--upcoming">Upcoming</span><span class="meta">Workshop</span></div>
+        <div class="event-body">
+          <h2>Draw Your Own Name</h2>
+          <p>A lettering workshop for small shops and makers. Bring a name, a pen and one thing you sell. You leave with a hand-drawn mark, an idea for a stamp, and notes on how to use them.</p>
+          <details class="more">
+            <summary>More details</summary>
+            <div class="more-body">
+              <ul><li>For: makers and small shops with no design background</li><li>Format: a small group around one long table</li><li>Bring: one object you sell; paper and ink are provided</li></ul>
+            </div>
+          </details>
+        </div>
+        <div class="event-side">
+          <dl class="dl"><dt>Date</dt><dd><span class="tbd">To be confirmed</span></dd><dt>Place</dt><dd><span class="tbd">To be confirmed</span></dd></dl>
+          <div class="apply"><strong>Registration not open</strong><span class="meta">Places will be limited.</span><a class="arrow link" href="contact.html#story">Register interest</a></div>
+        </div>
+      </li>
+
+      <li class="grid event" id="ev-table" data-tags="upcoming">
+        <div class="event-meta"><span class="status status--upcoming">Upcoming</span><span class="meta">Conversation</span></div>
+        <div class="event-body">
+          <h2>Open Table</h2>
+          <p>An afternoon to bring what you’re working on and talk it through. No pitches, no portfolio rules. One chair is always left empty for whoever arrives next.</p>
+          <details class="more">
+            <summary>More details</summary>
+            <div class="more-body">
+              <ul><li>For: makers, creatives and small teams at any stage</li><li>Format: short one-to-one conversations at a shared table</li><li>Bring: anything you’re working on, finished or not</li></ul>
+            </div>
+          </details>
+        </div>
+        <div class="event-side">
+          <dl class="dl"><dt>Date</dt><dd><span class="tbd">To be confirmed</span></dd><dt>Place</dt><dd><span class="tbd">To be confirmed</span></dd></dl>
+          <div class="apply"><strong>Registration not open</strong><span class="meta">We’ll let you know when the first table is set.</span><a class="arrow link" href="contact.html#story">Register interest</a></div>
+        </div>
+      </li>
+    </ul>
+    <p class="empty" id="event-empty" hidden>No events with this status yet. They will be recorded here once the first one takes place.</p>
+  </section>
+
+  <section class="wrap send" aria-labelledby="send-title">
+    <div class="grid">
+      <h2 id="send-title">Want to host one with us?</h2>
+      <div class="send-actions btn-row"><a class="btn" href="contact.html#partner">Offer a space or partnership</a><a class="arrow link" href="contact.html#collab">Lead a session</a></div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer wrap">
+  <div class="footer-brand"><img src="assets/logo/onua-wordmark.svg" alt="onua" width="380" height="170"></div>
+  <p class="footer-text">A non-profit-minded branding studio that discovers people’s stories and shapes their next chapter together. <span lang="ko">온</span>(溫) for warmth, ON for a light switched on.</p>
+  <nav class="footer-nav" aria-label="Footer">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="events.html" aria-current="page">Events</a></li>
+      <li><a href="notes.html">Notes</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <p class="footer-fine meta"><span>© 2026 onua</span><span>Portfolio projects are examples made to show how we work · The contact form is not yet connected to a server</span></p>
+</footer>
+
+<script src="script.js" defer></script>
+</body>
+</html>

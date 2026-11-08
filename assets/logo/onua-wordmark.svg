@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 170" width="380" height="170" role="img" aria-labelledby="t">
+  <title id="t">onua</title>
+  <!-- Hand-drawn lowercase wordmark. Two displacement passes: a slow one for wandering contours, a fine one for ragged ink edges. -->
+  <defs>
+    <filter id="ink" x="-8%" y="-12%" width="116%" height="124%" color-interpolation-filters="sRGB">
+      <feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="11" result="wander"/>
+      <feDisplacementMap in="SourceGraphic" in2="wander" scale="3.2" xChannelSelector="R" yChannelSelector="G" result="drawn"/>
+      <feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="2" seed="4" result="grain"/>
+      <feDisplacementMap in="drawn" in2="grain" scale="1.8" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+  </defs>
+  <g fill="none" stroke="#242422" stroke-linecap="round" stroke-linejoin="round" filter="url(#ink)">
+    <!-- o : open at the top, the pen overshoots where it closes -->
+    <path d="M66 60 C40 58 26 82 30 106 C34 128 56 138 74 130 C94 120 100 92 90 74 C84 62 72 58 60 62 C54 64 50 68 48 73" stroke-width="12.5"/>
+    <path d="M40 76 C30 96 34 120 52 132" stroke-width="17"/>
+    <!-- n -->
+    <path d="M120 66 C121 88 121 112 119 134" stroke-width="13"/>
+    <path d="M121 93 C128 70 150 60 166 68 C178 76 178 96 177 112 C176 122 177 128 181 134" stroke-width="11.5"/>
+    <path d="M166 69 C176 77 178 92 177 108" stroke-width="15.5"/>
+    <!-- u : slightly wider, heavier at the bottom of the bowl -->
+    <path d="M206 64 C203 88 202 116 218 128 C234 140 260 128 264 100" stroke-width="11.5"/>
+    <path d="M206 100 C206 118 212 128 226 131" stroke-width="16"/>
+    <path d="M266 62 C266 90 264 116 272 134" stroke-width="13"/>
+    <!-- a : single storey, the stem flicks out -->
+    <path d="M344 77 C330 60 300 62 292 88 C284 112 296 134 316 132 C332 130 342 112 344 90" stroke-width="11.5"/>
+    <path d="M292 89 C288 106 294 124 308 131" stroke-width="16"/>
+    <path d="M348 64 C346 90 344 116 351 133 C354 139 359 139 364 134" stroke-width="12.5"/>
+  </g>
+</svg>

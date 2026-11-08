@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Contact · onua</title>
+<meta name="description" content="Share your story, propose a collaboration or a partnership. The form is not connected to a server yet.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap">
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" href="assets/logo/onua-wordmark.svg" type="image/svg+xml">
+<script>document.documentElement.classList.add('js')</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><filter id="hand-ink" x="-2%" y="-10%" width="104%" height="120%"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="4" result="g"/><feDisplacementMap in="SourceGraphic" in2="g" scale="1.1" xChannelSelector="R" yChannelSelector="G"/></filter></svg>
+
+<header class="site-header wrap">
+  <a class="brand" href="index.html"><img src="assets/logo/onua-wordmark.svg" alt="onua, home" width="380" height="170"></a>
+  <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-menu">Menu</button>
+  <nav aria-label="Main">
+    <ul class="nav-list" id="site-menu">
+      <li><a href="about.html">About</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="events.html">Events</a></li>
+      <li><a href="notes.html">Notes</a></li>
+      <li><a href="contact.html" aria-current="page">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="main" tabindex="-1">
+  <section class="wrap grid page-intro" aria-labelledby="page-title">
+    <p class="meta num">06 / 06 — Contact</p>
+    <div class="intro-text">
+      <h1 id="page-title">Send us <span class="under">your story</span></h1>
+      <p class="lead muted">It doesn’t need to be polished. Tell us what you’re making and why it matters to you, and we’ll find the rest together.</p>
+    </div>
+  </section>
+
+  <section class="wrap grid form-layout" aria-labelledby="form-title">
+    <div class="form-main">
+      <h2 class="visually-hidden" id="form-title">Contact form</h2>
+      <div class="notice" role="note">
+        <strong>This form doesn’t send anything yet</strong>
+        <span class="muted">It isn’t connected to a server, so nothing you write here is sent or stored. “Prepare my message” gathers your text in one place so you can copy and keep it.</span>
+      </div>
+
+      <form id="contact-form" novalidate>
+        <fieldset>
+          <legend>Type of enquiry</legend>
+          <div class="types">
+            <label class="type" for="type-story"><input type="radio" name="type" id="type-story" value="story" checked><span class="t">Share your story</span><span class="d">Your own work or shop, or someone else’s you think we should meet</span></label>
+            <label class="type" for="type-collab"><input type="radio" name="type" id="type-collab" value="collab"><span class="t">Collaboration</span><span class="d">Designers, writers, photographers and illustrators who want to work with us</span></label>
+            <label class="type" for="type-partner"><input type="radio" name="type" id="type-partner" value="partner"><span class="t">Partnership</span><span class="d">Spaces, organisations and programmes who want to help more people be seen</span></label>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>About you</legend>
+          <div class="fields">
+            <div class="field"><label for="name">Name<span class="req">Required</span></label><input id="name" type="text" autocomplete="name" required aria-describedby="name-error"><span class="error" id="name-error" hidden></span></div>
+            <div class="field"><label for="email">Email<span class="req">Required</span></label><input id="email" type="email" autocomplete="email" required aria-describedby="email-error"><span class="error" id="email-error" hidden></span></div>
+            <div class="field"><label for="field">Field of work<span class="req">Required</span></label><input id="field" type="text" required aria-describedby="field-hint field-error"><span class="hint" id="field-hint">For example: ceramics, indie music, neighbourhood bakery</span><span class="error" id="field-error" hidden></span></div>
+            <div class="field"><label for="link">Reference link<span class="opt">Optional</span></label><input id="link" type="url" placeholder="https://" aria-describedby="link-hint link-error"><span class="hint" id="link-hint">A website, social profile or shared folder</span><span class="error" id="link-error" hidden></span></div>
+            <div class="field field--wide"><label for="intro">Introduction<span class="req">Required</span></label><textarea id="intro" required aria-describedby="type-hint intro-error"></textarea><span class="hint" id="type-hint">Who is behind the work, what they make, and why. You’re welcome to introduce someone else.</span><span class="error" id="intro-error" hidden></span></div>
+            <div class="field field--wide"><label for="help">What help you need<span class="req">Required</span></label><textarea id="help" required style="min-height:110px" aria-describedby="help-hint help-error"></textarea><span class="hint" id="help-hint">A name, a logo, packaging, an introduction text… or simply “I’m not sure yet”.</span><span class="error" id="help-error" hidden></span></div>
+          </div>
+        </fieldset>
+
+        <section class="privacy" aria-labelledby="privacy-title">
+          <h2 id="privacy-title">How we handle your information</h2>
+          <p class="muted">This form is not connected to a server, so it collects and stores nothing at the moment. Once it is connected, the terms below will apply, and the retention period will be stated here at that time.</p>
+          <dl class="dl">
+            <dt>What we collect</dt><dd>Name, email, field of work, introduction, help needed, reference link</dd>
+            <dt>Why</dt><dd>To read your enquiry and reply to you</dd>
+            <dt>Your choice</dt><dd>You may decline; in that case we can’t receive your enquiry through this form</dd>
+          </dl>
+          <label class="consent" for="consent"><input type="checkbox" id="consent" required aria-describedby="consent-error"><span>I’ve read this notice and agree to my information being collected when I send an enquiry once the form is connected.</span></label>
+          <span class="error" id="consent-error" hidden></span>
+        </section>
+
+        <div class="btn-row">
+          <button class="btn" type="submit">Prepare my message</button>
+          <span class="meta">This does not send anything.</span>
+        </div>
+      </form>
+
+      <div class="prepared" id="prepared" hidden>
+        <h2 tabindex="-1">Your message is ready. It has not been sent.</h2>
+        <p class="muted">Our inbox isn’t open yet. Copy this text and keep it, then send it once contact details are published on this page.</p>
+        <pre id="prepared-text"></pre>
+        <div class="btn-row"><button class="btn btn--ghost" type="button" id="copy-prepared">Copy text</button><span class="meta" id="copy-status" role="status" aria-live="polite"></span></div>
+      </div>
+    </div>
+
+    <aside class="form-side" aria-labelledby="next-title">
+      <div>
+        <h2 id="next-title">What happens next</h2>
+        <ol style="margin-top:14px">
+          <li><p>All three of us read every story ourselves.</p></li>
+          <li><p>If it feels like a fit, we suggest a short first conversation.</p></li>
+          <li><p>If we can’t start right away, we tell you honestly why, and when we might.</p></li>
+        </ol>
+      </div>
+      <p class="meta">We take on only a few projects at a time, so we can’t work with everyone. Every story you send will still be read with care.</p>
+    </aside>
+  </section>
+</main>
+
+<footer class="site-footer wrap">
+  <div class="footer-brand"><img src="assets/logo/onua-wordmark.svg" alt="onua" width="380" height="170"></div>
+  <p class="footer-text">A non-profit-minded branding studio that discovers people’s stories and shapes their next chapter together. <span lang="ko">온</span>(溫) for warmth, ON for a light switched on.</p>
+  <nav class="footer-nav" aria-label="Footer">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="events.html">Events</a></li>
+      <li><a href="notes.html">Notes</a></li>
+      <li><a href="contact.html" aria-current="page">Contact</a></li>
+    </ul>
+  </nav>
+  <p class="footer-fine meta"><span>© 2026 onua</span><span>Portfolio projects are examples made to show how we work · The contact form is not yet connected to a server</span></p>
+</footer>
+
+<script src="script.js" defer></script>
+</body>
+</html>
